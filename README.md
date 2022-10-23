@@ -2,7 +2,7 @@
 
 ## If Theme -
 
-1. Create a file inside inc folder (exmaple: `block-patterns.php`) and call it inside as require once in functions.php.
+1. Create a file inside inc folder (exmaple: `block-patterns.php`) and call it inside functions.php as require once.
 
 ```php
 require_once('inc/block-patterns.php');
