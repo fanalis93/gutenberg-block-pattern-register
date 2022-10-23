@@ -8,7 +8,7 @@
 require_once('inc/block-patterns.php');
 ```
 
-1. Use wordpress function `register_block_pattern` to register your blocks. In below snippet, I’m registering a code block with general args while categories and content can be modified. For categories, check step 3 and 4 for content.
+2. Use wordpress function `register_block_pattern` to register your blocks. In below snippet, I’m registering a code block with general args while categories and content can be modified. For categories, check step 3 and 4 for content.
 
 ```php
 <?php
@@ -30,7 +30,7 @@ function register_block_patterns()
 add_action('init', 'register_block_patterns');
 ```
 
-1. Here our category name is ****************************************“Purehearts Blocks”.**************************************** We can create multiple categories at the same time, [check here](https://github.com/imranhsayed/aquila/blob/f5abf41fa02e39f3ee949d4ab76c8dff2a8e4815/inc/classes/class-block-patterns.php#L78). 
+3. Here our category name is ****************************************“Purehearts Blocks”.**************************************** We can create multiple categories at the same time, [check here](https://github.com/imranhsayed/aquila/blob/f5abf41fa02e39f3ee949d4ab76c8dff2a8e4815/inc/classes/class-block-patterns.php#L78). 
 
 ```
 function wpdocs_block_pattern_category()
@@ -47,7 +47,7 @@ function wpdocs_block_pattern_category()
 add_action('init', 'wpdocs_block_pattern_category');
 ```
 
-1. This function is called from `$code_content` variable in snippet 2. This fetches template parts which is shown in the 2nd snippet of step 4 which we set inside template_parts folder as named `template-code.php`.
+4. This function is called from `$code_content` variable in snippet 2. This fetches template parts which is shown in the 2nd snippet of step 4 which we set inside template_parts folder as named `template-code.php`.
 
 ```php
 function get_pattern_content($template_path)
