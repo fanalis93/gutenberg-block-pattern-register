@@ -1,3 +1,3 @@
 # gutenberg-block-pattern-register
 
-Register Custom Gutenberg Block Pattern and Category.
+Register Custom Gutenberg Block Pattern and Category For Theme Development.
